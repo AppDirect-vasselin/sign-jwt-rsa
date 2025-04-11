@@ -62,8 +62,7 @@ $base64Header = _base64UrlEncode($headers);
 /* BODY */
 $dateTime = new \DateTime();
 $issuedAt = $dateTime->getTimeStamp();
-//$expiresAt = $dateTime->add(new \DateInterval('PT15M'))->getTimeStamp();
-$expiresAt = $dateTime->add(new \DateInterval('PT8H'))->getTimeStamp();
+$expiresAt = $dateTime->add(new \DateInterval('PT15M'))->getTimeStamp();
 $body = json_encode([
     'iss' => $integrationKey,
     'aud' => 'https://zone.itcloud.ca/api/partner',
