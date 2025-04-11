@@ -1,5 +1,6 @@
 # sign-jwt-rsa
 
+**Setup**
 - Build the docker image
   - `docker-compose build`
 - Run containers
@@ -9,7 +10,7 @@
 
 **Postman**
 
-You might want to save the signed token in a envar but using `Tests` or `Post-request script`:
+You may want to save the signed token in a envar by using `Tests` or `Post-Request Script`:
 
 ```
 var response = pm.response.json();
